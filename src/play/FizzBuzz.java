@@ -2,7 +2,7 @@ package play;
 
 public class FizzBuzz {
 	public String fizzBuzzPlay(int number){
-		return "";
+		return String.valueOf(number);
 		
 	}
 }
