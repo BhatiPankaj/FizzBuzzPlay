@@ -44,4 +44,12 @@ public class FizzBuzzTest {
 		Assert.assertEquals(fizzBuzz, fizzy.fizzBuzzPlay(15));
 		Assert.assertEquals(fizzBuzz, fizzy.fizzBuzzPlay(45));
 	}
+	
+	@Test
+	public void numberIsNotInRange(){
+		if(fizzy.fizzBuzzPlay(102) == "Number is not in Range") {
+			Assert.fail("Number is not in Range");
+		}
+		
+	}
 }
