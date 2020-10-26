@@ -11,6 +11,7 @@ public class FizzBuzzTest {
 	private FizzBuzz fizzy;
 	private String fizz = "Fizz";
 	private String buzz = "Buzz";
+	private String fizzBuzz = "FizzBuzz";
 	
 	@Before
 	public void setup() {
@@ -36,5 +37,11 @@ public class FizzBuzzTest {
 	public void numberIsMultipleOf_5() {
 		Assert.assertEquals(buzz, fizzy.fizzBuzzPlay(5));
 		Assert.assertEquals(buzz, fizzy.fizzBuzzPlay(20));
+	}
+	
+	@Test
+	public void numberIsMultipleOf_3and5() {
+		Assert.assertEquals(fizzBuzz, fizzy.fizzBuzzPlay(15));
+		Assert.assertEquals(fizzBuzz, fizzy.fizzBuzzPlay(45));
 	}
 }
