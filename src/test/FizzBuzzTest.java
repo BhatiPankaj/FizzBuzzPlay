@@ -7,8 +7,10 @@ import org.junit.Test;
 import play.FizzBuzz;
 
 public class FizzBuzzTest {
+	
 	private FizzBuzz fizzy;
 	private String fizz = "Fizz";
+	private String buzz = "Buzz";
 	
 	@Before
 	public void setup() {
@@ -28,5 +30,11 @@ public class FizzBuzzTest {
 	public void numberIsMultipleOf_3() {
 		Assert.assertEquals(fizz, fizzy.fizzBuzzPlay(3));
 		Assert.assertEquals(fizz, fizzy.fizzBuzzPlay(6));
+	}
+	
+	@Test
+	public void numberIsMultipleOf_5() {
+		Assert.assertEquals(buzz, fizzy.fizzBuzzPlay(5));
+		Assert.assertEquals(buzz, fizzy.fizzBuzzPlay(20));
 	}
 }
